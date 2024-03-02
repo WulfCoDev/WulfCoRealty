@@ -1,9 +1,11 @@
 import React, { createContext, useContext, useState } from "react";
 
 interface Property {
-  bathrooms: number;
-  bedrooms: number;
-  city: string;
+  baths: number;
+  beds: number;
+  addressCity: string;
+  addressStreet: string;
+  addressState: string;
   country: string;
   currency: string;
   daysOnZillow: number;
@@ -12,7 +14,7 @@ interface Property {
   imgSrc: string;
   isFeatured: boolean;
   isNonOwnerOccupied: boolean;
-  zipcode: number;
+  addressZipcode: number;
   price: number;
   streetAddress: string;
   zpid: number;

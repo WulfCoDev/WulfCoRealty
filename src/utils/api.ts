@@ -1,46 +1,44 @@
 const API_KEY = "5a22a615f8msh685d41198dad2cdp11a23djsn5829e392c9e2";
-const API_HOST = "zillow56.p.rapidapi.com";
 
 export async function searchProperties(searchQuery) {
-  const url = `https://${API_HOST}/search?location=${encodeURIComponent(
+  const url = `https://zillow-working-api.p.rapidapi.com/search/byaddress?query=${encodeURIComponent(
     searchQuery
-  )}`;
+  )}&page=1`;
   const options = {
     method: "GET",
     headers: {
       "X-RapidAPI-Key": API_KEY,
-      "X-RapidAPI-Host": API_HOST,
+      "X-RapidAPI-Host": "zillow-working-api.p.rapidapi.com",
     },
   };
 
   try {
     const response = await fetch(url, options);
     const data = await response.json();
-    console.log(data.results);
-    return data.results;
+    console.log(data.Results);
+    return data.Results; // Adjust the return value based on the response format of the new API
   } catch (error) {
     console.error("Error searching properties:", error);
-    throw error; // Re-throw the error to handle it in the component
+    throw error;
   }
 }
 
-export async function getPropertyDetails(zpid: number) {
-  const url = `https://zillow56.p.rapidapi.com/property?zpid=${zpid}`;
+export async function getPropertyDetails(zpid) {
+  const url = `https://zillow-working-api.p.rapidapi.com/pro/byzpid?zpid=${zpid}`;
   const options = {
     method: "GET",
-    header: {
+    headers: {
       "X-RapidAPI-Key": "5a22a615f8msh685d41198dad2cdp11a23djsn5829e392c9e2",
-      "X-RapidAPI-Host": "zillow56.p.rapidapi.com",
+      "X-RapidAPI-Host": "zillow-working-api.p.rapidapi.com",
     },
   };
+
   try {
     const response = await fetch(url, options);
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
-    const result = await response.json();
-    console.log(result);
-    return result;
+    return await response.json();
   } catch (error) {
     console.error("Error fetching data: ", error);
     return null;
