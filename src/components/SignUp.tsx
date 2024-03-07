@@ -46,7 +46,7 @@ const SignUp = () => {
               type="submit"
               className="bg-blue-500 text-white py-2 rounded-lg"
             >
-              Login
+              Create account
             </button>
           </form>
         </div>

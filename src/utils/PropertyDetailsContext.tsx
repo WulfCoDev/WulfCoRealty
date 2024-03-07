@@ -8,6 +8,7 @@ interface Photo {
     // Add more types as needed
   };
 }
+
 interface PropertyDetails {
   message: string;
   zillowURL: string;
@@ -35,6 +36,7 @@ interface PropertyDetails {
     rentZestimate: number;
     description: string;
     originalPhotos: Photo[];
+    homeInsights: { insights: { phrases: string[] } }[];
     livingAreaUnitsShort: string;
     livingAreaUnits: string;
     favoriteCount: number;
@@ -43,9 +45,69 @@ interface PropertyDetails {
     monthlyHoaFee: number;
     propertyTypeDimension: string;
     lotSize: number;
+    virtualTourUrl: string;
+    nearbyCities: {
+      name: string;
+    };
     resoFacts: {
       pricePerSquareFoot: number;
       yearBuilt: number;
+      mainLevelBathrooms: number;
+      mainLevelBedrooms: number;
+      levels: string;
+      stories: number;
+      storiesTotal: number;
+      bathroomsFloat: number;
+      bathroomsFull: number;
+      bathroomsHalf: number;
+      bathroomsOneQuarter: number;
+      bathroomsPartial: number;
+      bathroomsThreeQuarter: number;
+      appliances: string;
+      entryLocation: string;
+      poolFeatures: string[];
+      spaFeatures: string[];
+      patioAndPorchFeatures: string[];
+      fencing: string[];
+      view: string[];
+      lotSize: string;
+      lotFeatures: string[];
+      specialListingConditions: string;
+      parcelNumber: string;
+      communityFeatures: string[];
+      propertyCondition: string;
+      propertySubType: string[];
+      parkingCapacity: number;
+      association: {
+        feeFrequency: string;
+        name: string;
+        phone: string;
+      };
+      associationAmenities: string[];
+      associationFee: string[];
+      associationName: string;
+      garageParkingCapacity: number;
+      coveredParkingCapacity: number;
+      cityRegion: string;
+      parkingFeatures: string[];
+      laundryFeatures: string[];
+      interiorFeatures: string[];
+      heating: string[];
+      commonWalls: string;
+      sewer: string[];
+      waterSource: string[];
+      utilities: string[];
+      homeType: string;
+      hoaFee: string;
+      hoaFeeTotal: string;
+      isNewConstruction: boolean;
+      fireplaceFeatures: string[];
+      livingArea: string;
+      cooling: string[];
+      flooring: string[];
+      hasAssociation: boolean;
+      buyerAgencyCompensation: string;
+      buyerAgencyCompensationType: string;
     };
     // Add more properties as needed
   };
