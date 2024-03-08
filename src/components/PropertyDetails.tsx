@@ -736,8 +736,8 @@ const PropertyDetailsPage = () => {
                     <li className="text-white font-secondary text-lg">
                       Nearby cities:{" "}
                       {propertyDetails.propertyDetails.nearbyCities.map(
-                        (city: string, index: number | string) => (
-                          <span key={index}>{city.name}, </span>
+                        (city) => (
+                          <span key={city.name}>{city.name}, </span>
                         )
                       )}
                     </li>
