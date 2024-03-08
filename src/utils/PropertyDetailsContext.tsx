@@ -36,7 +36,7 @@ interface PropertyDetails {
     rentZestimate: number;
     description: string;
     originalPhotos: Photo[];
-    homeInsights: { insights: { phrases: string[] } }[];
+    homeInsights: { insights: { phrases: string[] | number[] } }[];
     livingAreaUnitsShort: string;
     livingAreaUnits: string;
     favoriteCount: number;

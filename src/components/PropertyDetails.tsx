@@ -178,7 +178,7 @@ const PropertyDetailsPage = () => {
         </h2>
         <div className="flex flex-wrap items-center justify-center">
           {propertyDetails.propertyDetails.homeInsights[0]?.insights[0].phrases.map(
-            (phrase, index) => (
+            (phrase: string, index: number | string) => (
               <div
                 key={index}
                 className="bg-blue-400 w-fit p-2 m-2 rounded-md font-primary text-xl text-white"
@@ -736,7 +736,7 @@ const PropertyDetailsPage = () => {
                     <li className="text-white font-secondary text-lg">
                       Nearby cities:{" "}
                       {propertyDetails.propertyDetails.nearbyCities.map(
-                        (city, index) => (
+                        (city: string, index: number | string) => (
                           <span key={index}>{city.name}, </span>
                         )
                       )}

@@ -1,5 +1,3 @@
-// App.tsx
-import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { SearchResultsProvider } from "./utils/SearchResultsContext";
 import Home from "./components/Home";
