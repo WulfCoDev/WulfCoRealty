@@ -9,7 +9,7 @@ const Hero = () => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
 
-  const handleSearchSubmit = async (event: string | number) => {
+  const handleSearchSubmit = async (event) => {
     event.preventDefault();
     try {
       const searchResults = await searchProperties(searchQuery);
@@ -20,7 +20,7 @@ const Hero = () => {
     }
   };
 
-  const handleSearchChange = (event: string | number) => {
+  const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
   };
 
