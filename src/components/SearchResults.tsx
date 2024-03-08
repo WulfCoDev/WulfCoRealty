@@ -1,15 +1,13 @@
-import React, { useState } from "react";
 import { useSearchResults } from "../utils/SearchResultsContext";
 import { FaBed, FaToilet } from "react-icons/fa";
 import Navbar from "./Navbar";
-import { Link, useNavigate } from "react-router-dom";
-import { getPropertyDetails } from "../utils/api";
+import { useNavigate } from "react-router-dom";
 
 const SearchResultsPage = () => {
   const { searchResults } = useSearchResults();
   const navigate = useNavigate();
 
-  const handlePropertyClick = async (zpid) => {
+  const handlePropertyClick = async (zpid: number) => {
     navigate(`/property/${zpid}`);
   };
 

@@ -1,5 +1,5 @@
 // Hero.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSearchResults } from "../utils/SearchResultsContext";
 import { searchProperties } from "../utils/api";

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getPropertyDetails } from "../utils/api";
 import { usePropertyDetails } from "../utils/PropertyDetailsContext";
@@ -346,16 +346,14 @@ const PropertyDetailsPage = () => {
                 </p>
                 <ul>
                   {propertyDetails.propertyDetails.resoFacts.laundryFeatures !==
-                    null &&
-                    propertyDetails.propertyDetails.resoFacts
-                      .laundryFeatures !== 0 && (
-                      <li className="text-white font-secondary text-lg">
-                        Laundry features:{" "}
-                        {propertyDetails.propertyDetails.resoFacts.laundryFeatures.join(
-                          ", "
-                        )}
-                      </li>
-                    )}
+                    null && (
+                    <li className="text-white font-secondary text-lg">
+                      Laundry features:{" "}
+                      {propertyDetails.propertyDetails.resoFacts.laundryFeatures.join(
+                        ", "
+                      )}
+                    </li>
+                  )}
                 </ul>
               </div>
 
@@ -734,8 +732,7 @@ const PropertyDetailsPage = () => {
                       {propertyDetails.propertyDetails.resoFacts.cityRegion}
                     </li>
                   )}
-                  {propertyDetails.propertyDetails.resoFacts.nearbyCities !==
-                    null && (
+                  {propertyDetails.propertyDetails.nearbyCities !== null && (
                     <li className="text-white font-secondary text-lg">
                       Nearby cities:{" "}
                       {propertyDetails.propertyDetails.nearbyCities.map(
@@ -774,33 +771,7 @@ const PropertyDetailsPage = () => {
               </div>
             </div>
             {/* Right Container */}
-            <div className="flex flex-col space-y-4">
-              <div>
-                <p className="font-bold text-white font-secondary text-xl">
-                  Location
-                </p>
-                <ul>
-                  {propertyDetails.propertyDetails.resoFacts.cityRegion !==
-                    null && (
-                    <li className="text-white font-secondary text-lg">
-                      Region:{" "}
-                      {propertyDetails.propertyDetails.resoFacts.cityRegion}
-                    </li>
-                  )}
-                  {propertyDetails.propertyDetails.resoFacts.nearbyCities !==
-                    null && (
-                    <li className="text-white font-secondary text-lg">
-                      Nearby cities:{" "}
-                      {propertyDetails.propertyDetails.nearbyCities.map(
-                        (city, index) => (
-                          <span key={index}>{city.name}, </span>
-                        )
-                      )}
-                    </li>
-                  )}
-                </ul>
-              </div>
-            </div>
+            <div className="flex flex-col space-y-4"></div>
           </div>
           <p className="font-primary font-bold text-2xl mb-4 text-white text-center bg-slate-400 w-full">
             Other

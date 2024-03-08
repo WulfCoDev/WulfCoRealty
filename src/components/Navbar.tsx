@@ -1,8 +1,4 @@
-import { useNavigate } from "react-router-dom";
-
 const Navbar = () => {
-  const navigate = useNavigate();
-
   return (
     <nav className="bg-blue-400 w-full h-[50px]">
       <div className="w-full h-full flex justify-between items-center">
