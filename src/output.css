@@ -643,6 +643,10 @@ video {
   height: 20rem;
 }
 
+.h-\[250px\] {
+  height: 250px;
+}
+
 .h-\[50px\] {
   height: 50px;
 }
@@ -668,6 +672,10 @@ video {
   width: 100vw;
 }
 
+.w-\[250px\] {
+  width: 250px;
+}
+
 .w-\[25rem\] {
   width: 25rem;
 }
@@ -691,6 +699,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[5px\] {
+  width: 5px;
 }
 
 .flex-grow {
@@ -784,6 +796,12 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -863,6 +881,30 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-white\/30 {
+  background-color: rgb(255 255 255 / 0.3);
+}
+
+.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-white\/70 {
+  background-color: rgb(255 255 255 / 0.7);
+}
+
+.bg-blue-400\/70 {
+  background-color: rgb(96 165 250 / 0.7);
+}
+
+.bg-blue-400\/30 {
+  background-color: rgb(96 165 250 / 0.3);
+}
+
+.bg-blue-400\/75 {
+  background-color: rgb(96 165 250 / 0.75);
+}
+
 .bg-hero {
   background-image: url('../src/assets/cabin.jpg');
 }
@@ -935,6 +977,10 @@ video {
   font-family: Poppins;
 }
 
+.font-tertiary {
+  font-family: Roboto;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -973,11 +1019,6 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
-}
-
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -991,6 +1032,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .shadow-lg {
@@ -1010,20 +1055,10 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.outline-double {
-  outline-style: double;
-}
-
-.outline-4 {
-  outline-width: 4px;
-}
-
-.outline-2 {
-  outline-width: 2px;
-}
-
-.outline-black {
-  outline-color: #000;
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 #root {
@@ -1070,6 +1105,12 @@ video {
 .\*\:text-2xl > * {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.\*\:backdrop-blur-sm > * {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .hover\:bg-blue-600:hover {
