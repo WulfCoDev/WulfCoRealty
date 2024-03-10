@@ -27,8 +27,8 @@ const Hero = () => {
   return (
     <div className="bg-white h-[50vh] w-full flex justify-center items-center">
       <div className="bg-hero bg-cover bg-no-repeat bg-center flex justify-center items-center h-full w-full">
-        <div className="mx-auto rounded-lg w-fit">
-          <h1 className="font-fifth text-white text-3xl outline-2 outline-black text-center">
+        <div className="mx-auto w-fit">
+          <h1 className="font-fifth text-white text-3xl">
             Don't find a house. Find a home.
           </h1>
           <div className="md:flex">
@@ -38,7 +38,7 @@ const Hero = () => {
                   type="text"
                   value={searchQuery}
                   onChange={handleSearchChange}
-                  placeholder="Enter a city and state, or address"
+                  placeholder="Enter a city and state, or ZIP code"
                   className="px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:border-blue-300"
                 />
                 <button
