@@ -38,7 +38,7 @@ const Hero = () => {
                   type="text"
                   value={searchQuery}
                   onChange={handleSearchChange}
-                  placeholder="Enter a city, state, or ZIP code"
+                  placeholder="Enter a city and state, or address"
                   className="px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:border-blue-300"
                 />
                 <button
