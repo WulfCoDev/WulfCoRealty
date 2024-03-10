@@ -6,6 +6,7 @@ import SignUp from "./components/SignUp";
 import SearchResultsPage from "./components/SearchResults";
 import PropertyDetailsPage from "./components/PropertyDetails";
 import { PropertyDetailsProvider } from "./utils/PropertyDetailsContext";
+import { ReactNode } from "react";
 
 function App() {
   return (

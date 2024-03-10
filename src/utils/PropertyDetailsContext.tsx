@@ -48,7 +48,7 @@ interface PropertyDetails {
     virtualTourUrl: string;
     nearbyCities: {
       name: string;
-    };
+    }[];
     resoFacts: {
       pricePerSquareFoot: number;
       yearBuilt: number;
