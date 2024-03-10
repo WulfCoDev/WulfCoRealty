@@ -32,7 +32,11 @@ const PropertyDetailsPage = () => {
 
   // Render loading state while fetching property details or if no details available
   if (!propertyDetails) {
-    return <div>Loading...</div>;
+    return (
+      <div className="h-screen w-screen text-2xl text-white animate-bounce flex justify-center items-center">
+        Loading...
+      </div>
+    );
   }
 
   const handlePrevImage = () => {
