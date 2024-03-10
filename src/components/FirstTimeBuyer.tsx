@@ -4,49 +4,65 @@ const FirstTimeBuyerSection = () => {
       <h1 className="text-white font-tertiary font-semibold text-4xl bg-slate-400 p-2 w-full">
         First time buyer?
       </h1>
-      <div className="w-full flex space-x-8 justify-evenly items-center p-8">
-        <div className="bg-blue-400 w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <p className="font-secondary text-white text-2xl text-center">
-            Overview <br /> of the <br /> Home Buying Process
-          </p>
+      <div className="w-full flex space-x-8 justify-evenly items-center p-8 *:rounded-md">
+        <div className="bg-1 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
+          <a href="">
+            <p className="font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
+              Overview <br /> of the <br /> Home Buying Process
+            </p>
+          </a>
         </div>
-        <div className="bg-blue-400 w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <p className="font-secondary text-white text-2xl text-center">
-            Financial Preparation
-          </p>
+        <div className="bg-2 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center">
+          <a href="">
+            <p className="font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
+              Financial Preparation
+            </p>
+          </a>
         </div>
-        <div className="bg-blue-400 w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <p className="font-secondary text-white text-2xl text-center">
-            Finding <br /> the <br /> Right Home
-          </p>
+        <div className="bg-3 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
+          <a href="">
+            <p className="p-2 font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4">
+              Finding <br /> the <br /> Right Home
+            </p>
+          </a>
         </div>
-        <div className="bg-blue-400 w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <p className="font-secondary text-white text-2xl text-center">
-            Understanding <br /> the <br /> Market
-          </p>
+        <div className="bg-4 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
+          <a href="">
+            <p className="p-2 font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4">
+              Understanding <br /> the <br /> Market
+            </p>
+          </a>
         </div>
       </div>
-      <div className="w-full flex space-x-8 justify-evenly items-center p-8">
-        <div className="bg-blue-400 w-[250px] h-[250px] flex justify-center items-center flex-col">
+      <div className="w-full flex space-x-8 justify-evenly items-center p-8 *:rounded-md">
+        <div className="bg-5 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
           {" "}
-          <p className="font-secondary text-white text-2xl text-center">
-            Home Inspection <br /> and <br /> Appraisal
-          </p>
+          <a href="">
+            <p className="font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
+              Home Inspection <br /> and <br /> Appraisal
+            </p>
+          </a>
         </div>
-        <div className="bg-blue-400 w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <p className="font-secondary text-white text-2xl text-center">
-            Closing Process
-          </p>
+        <div className="bg-6 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
+          <a href="">
+            <p className="font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
+              Closing Process
+            </p>
+          </a>
         </div>
-        <div className="bg-blue-400 w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <p className="font-secondary text-white text-2xl text-center">
-            Post-Purchase Consideration
-          </p>
+        <div className="bg-7 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
+          <a href="">
+            <p className="font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
+              Post-Purchase Consideration
+            </p>
+          </a>
         </div>
-        <div className="bg-blue-400 w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <p className="font-secondary text-white text-2xl text-center">
-            Additional Resources
-          </p>
+        <div className="bg-8 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
+          <a href="">
+            <p className="font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
+              Additional Resources
+            </p>
+          </a>
         </div>
       </div>
     </div>
