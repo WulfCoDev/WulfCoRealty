@@ -66,7 +66,7 @@ const PropertyDetailsPage = () => {
               .mixedSources.jpeg[0].url
           }
           alt={`Photo ${currentImageIndex}`}
-          className="object-cover border-white border-2 shadow-md shadow-white/30"
+          className="object-cover"
         />
         {/* Render navigation arrows */}
         <div className="absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full *:text-2xl">

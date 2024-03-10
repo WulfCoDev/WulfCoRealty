@@ -1,8 +1,8 @@
 const FirstTimeBuyerSection = () => {
   return (
     <div className="w-full h-fit flex items-center flex-col">
-      <h1 className="text-white font-tertiary font-semibold text-4xl bg-slate-400 p-2 w-full">
-        First time buyer?
+      <h1 className="text-white font-secondary font-bold text-4xl bg-slate-400 p-2 w-full shadow-lg shadow-black">
+        First Time Buyers
       </h1>
       <div className="w-full flex space-x-8 justify-evenly items-center p-8 *:rounded-md *:shadow-lg *:shadow-black">
         <div className="bg-1 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
