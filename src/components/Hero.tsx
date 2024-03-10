@@ -28,7 +28,7 @@ const Hero = () => {
     <div className="bg-white h-[50vh] w-full flex justify-center items-center">
       <div className="bg-hero bg-cover bg-no-repeat bg-center flex justify-center items-center h-full w-full">
         <div className="mx-auto rounded-lg w-fit">
-          <h1 className="font-fifth text-white text-3xl outline-2 outline-black">
+          <h1 className="font-fifth text-white text-3xl outline-2 outline-black text-center">
             Don't find a house. Find a home.
           </h1>
           <div className="md:flex">
