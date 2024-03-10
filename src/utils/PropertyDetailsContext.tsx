@@ -128,7 +128,9 @@ const PropertyDetailsContext = createContext<PropertyDetailsContextType>({
 
 export const usePropertyDetails = () => useContext(PropertyDetailsContext);
 
-export const PropertyDetailsProvider: React.FC = ({ children }) => {
+export const PropertyDetailsProvider: React.FC<{ children: ReactNode }> = ({
+  children,
+}) => {
   const [propertyDetails, setPropertyDetails] =
     useState<PropertyDetails | null>(null);
 

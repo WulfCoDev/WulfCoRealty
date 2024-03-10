@@ -33,7 +33,9 @@ const SearchResultsContext = createContext<SearchResultsContextType>({
 
 export const useSearchResults = () => useContext(SearchResultsContext);
 
-export const SearchResultsProvider: React.FC = ({ children }) => {
+export const SearchResultsProvider: React.FC<{ children: ReactNode }> = ({
+  children,
+}) => {
   const [searchResults, setSearchResults] = useState<Property[]>([]);
 
   return (
