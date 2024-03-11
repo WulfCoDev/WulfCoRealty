@@ -5,7 +5,8 @@ const Footer = () => {
         <p>* A WulfCoDev Site *</p>
         <p>* Work in Progress *</p>
         <p>
-          * All data displayed on this site is from Zillow's open database *
+          * All property data displayed on this site is from Zillow's open
+          database *
         </p>
       </div>
     </footer>
