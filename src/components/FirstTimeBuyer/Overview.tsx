@@ -6,12 +6,14 @@ const Overview = () => {
     <div className="container mx-auto w-screen h-fit flex flex-col items-center">
       <Navbar />
 
-      <div className="flex justify-center items-center w-full h-fit">
-        <img src="/9.jpg" alt="" />
+      <div className="flex justify-center items-center w-full h-[600px] bg-9 bg-cover bg-no-repeat">
+        <div>
+          <h1 className="w-full font-secondary font-medium text-white text-4xl p-4 backdrop-blur-sm bg-black/10">
+            Overview of the Home Buying Process
+          </h1>
+        </div>
       </div>
-      <h1 className="bg-slate-400 w-full font-secondary font-medium text-white text-4xl p-4">
-        Overview of the Home Buying Process
-      </h1>
+
       <div className="w-full *:bg-white *:space-y-4">
         <div className="w-full flex flex-col justify-center *:font-secondary *:text-black *:text-xl p-4">
           <p className="font-medium bg-blue-400 p-2">Introduction</p>
