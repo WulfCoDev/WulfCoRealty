@@ -7,6 +7,7 @@ import Navbar from "./Navbar";
 import { GiFamilyHouse } from "react-icons/gi";
 import { TbBuildingEstate, TbRulerMeasure, TbHammer } from "react-icons/tb";
 import { SiZillow } from "react-icons/si";
+import Footer from "./Footer";
 
 const PropertyDetailsPage = () => {
   const { zpid } = useParams(); // Get the zpid from URL params
@@ -56,7 +57,7 @@ const PropertyDetailsPage = () => {
   };
 
   return (
-    <div className="mx-auto container flex items-center flex-col bg-slate-800 h-fit w-[100vw]">
+    <div className="mx-auto container flex items-center flex-col bg-slate-800 h-fit">
       <Navbar />
       {/* Render current photo */}
       <div className="relative w-full flex items-center justify-center p-2 m-2">
@@ -852,15 +853,7 @@ const PropertyDetailsPage = () => {
           </div>
         </div>
       </div>
-      <footer className="bg-blue-400 h-[50px] w-full">
-        <div className="flex justify-evenly items-center h-full">
-          <p>* A WulfCoDev Site *</p>
-          <p>* Work in Progress *</p>
-          <p>
-            * All data displayed on this site is from Zillow's open database *
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

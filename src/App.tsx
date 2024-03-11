@@ -6,6 +6,10 @@ import SignUp from "./components/SignUp";
 import SearchResultsPage from "./components/SearchResults";
 import PropertyDetailsPage from "./components/PropertyDetails";
 import { PropertyDetailsProvider } from "./utils/PropertyDetailsContext";
+import Overview from "./components/FirstTimeBuyer/Overview";
+import FinancialPreparation from "./components/FirstTimeBuyer/FinancialPreparation";
+import FindRightHome from "./components/FirstTimeBuyer/FindRightHome";
+import UnderstandingTheMarket from "./components/FirstTimeBuyer/UnderstandingMarket";
 
 function App() {
   return (
@@ -18,6 +22,16 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/searchresult" element={<SearchResultsPage />} />
             <Route path="/property/:zpid" element={<PropertyDetailsPage />} />
+            <Route path="/overview" element={<Overview />} />
+            <Route
+              path="/understanding-the-market"
+              element={<UnderstandingTheMarket />}
+            />
+            <Route path="/finding-the-right-home" element={<FindRightHome />} />
+            <Route
+              path="/financial-preparation"
+              element={<FinancialPreparation />}
+            />
           </Routes>
         </BrowserRouter>
       </PropertyDetailsProvider>

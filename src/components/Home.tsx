@@ -1,4 +1,5 @@
 import FirstTimeBuyerSection from "./FirstTimeBuyer";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 
@@ -8,15 +9,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <FirstTimeBuyerSection />
-      <footer className="bg-blue-400 h-[50px] w-full">
-        <div className="flex justify-evenly items-center h-full">
-          <p>* A WulfCoDev Site *</p>
-          <p>* Work in Progress *</p>
-          <p>
-            * All data displayed on this site is from Zillow's open database *
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

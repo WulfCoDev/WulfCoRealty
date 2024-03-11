@@ -19,6 +19,7 @@ export default {
       6: "url('../src/assets/6.jpg')",
       7: "url('../src/assets/7.jpg')",
       8: "url('../src/assets/8.jpg')",
+      9: "url('../src/assets/9.jpg')",
     },
     extend: {},
   },

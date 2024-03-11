@@ -6,28 +6,28 @@ const FirstTimeBuyerSection = () => {
       </h1>
       <div className="w-full flex space-x-8 justify-evenly items-center p-8 *:rounded-md *:shadow-lg *:shadow-black">
         <div className="bg-1 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <a href="">
+          <a href="/overview">
             <p className="font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
               Overview <br /> of the <br /> Home Buying Process
             </p>
           </a>
         </div>
         <div className="bg-2 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center">
-          <a href="">
+          <a href="/financial-preparation">
             <p className="font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
               Financial Preparation
             </p>
           </a>
         </div>
         <div className="bg-3 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <a href="">
+          <a href="/finding-the-right-home">
             <p className="p-2 font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4">
               Finding <br /> the <br /> Right Home
             </p>
           </a>
         </div>
         <div className="bg-4 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <a href="">
+          <a href="understanding-the-market">
             <p className="p-2 font-secondary text-white backdrop-blur-sm bg-white/10 font-semibold text-2xl text-center ml-4 mr-4">
               Understanding <br /> the <br /> Market
             </p>
