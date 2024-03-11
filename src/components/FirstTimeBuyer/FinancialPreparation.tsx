@@ -7,7 +7,7 @@ const FinancialPreparation = () => {
       <Navbar />
 
       <div className="flex justify-center items-center w-full h-fit">
-        <img src="src/assets/2.jpg" alt="" />
+        <img src="public/2.jpg" alt="" />
       </div>
       <h1 className="bg-slate-400 w-full font-secondary font-medium text-white text-4xl p-4">
         Financial Preparation for First-Time Home Buyers

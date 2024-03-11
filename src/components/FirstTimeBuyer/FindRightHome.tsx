@@ -7,7 +7,7 @@ const FindRightHome = () => {
       <Navbar />
 
       <div className="flex justify-center items-center w-full h-fit">
-        <img src="src/assets/3.jpg" alt="" />
+        <img src="public/3.jpg" alt="" />
       </div>
       <h1 className="bg-slate-400 w-full font-secondary font-medium text-white text-4xl p-4">
         Finding the Right Home
