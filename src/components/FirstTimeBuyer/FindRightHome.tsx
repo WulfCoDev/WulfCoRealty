@@ -6,7 +6,7 @@ const FindRightHome = () => {
     <div className="container mx-auto w-screen h-fit flex flex-col items-center">
       <Navbar />
 
-      <div className="flex justify-center items-center w-full h-[600px] bg-3 bg-cover bg-no-repeat">
+      <div className="flex justify-center items-center w-full h-[600px] bg-3 bg-cover bg-no-repeat bg-center">
         <div>
           <h1 className="w-full font-secondary font-medium text-white text-4xl p-4 backdrop-blur-sm bg-black/10">
             Finding the Right Home
