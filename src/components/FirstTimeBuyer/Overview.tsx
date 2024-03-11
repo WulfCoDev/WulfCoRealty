@@ -7,7 +7,7 @@ const Overview = () => {
       <Navbar />
 
       <div className="flex justify-center items-center w-full h-fit">
-        <img src="public/9.jpg" alt="" />
+        <img src="/9.jpg" alt="" />
       </div>
       <h1 className="bg-slate-400 w-full font-secondary font-medium text-white text-4xl p-4">
         Overview of the Home Buying Process

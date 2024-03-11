@@ -7,7 +7,7 @@ const UnderstandingTheMarket = () => {
       <Navbar />
 
       <div className="flex justify-center items-center w-full h-fit">
-        <img src="public/4.jpg" alt="" />
+        <img src="/4.jpg" alt="" />
       </div>
       <h1 className="bg-slate-400 w-full font-secondary font-medium text-white text-4xl p-4">
         Understanding the Real Estate Market
