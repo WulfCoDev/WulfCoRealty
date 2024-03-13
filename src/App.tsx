@@ -11,6 +11,7 @@ import FinancialPreparation from "./components/FirstTimeBuyer/FinancialPreparati
 import FindRightHome from "./components/FirstTimeBuyer/FindRightHome";
 import UnderstandingTheMarket from "./components/FirstTimeBuyer/UnderstandingMarket";
 import InspectionAndAppraisal from "./components/FirstTimeBuyer/InspectionAndAppraisal";
+import ClosingProcess from "./components/FirstTimeBuyer/ClosingProcess";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/searchresult" element={<SearchResultsPage />} />
             <Route path="/property/:zpid" element={<PropertyDetailsPage />} />
             <Route path="/overview" element={<Overview />} />
+            <Route path="/closing-process" element={<ClosingProcess />} />
             <Route
               path="/home-inspections-and-appraisals"
               element={<InspectionAndAppraisal />}

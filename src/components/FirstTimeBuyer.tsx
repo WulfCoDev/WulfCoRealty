@@ -44,7 +44,7 @@ const FirstTimeBuyerSection = () => {
           </a>
         </div>
         <div className="bg-6 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <a href="">
+          <a href="/closing-process">
             <p className="font-secondary text-white backdrop-blur-sm bg-black/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
               Closing Process
             </p>
