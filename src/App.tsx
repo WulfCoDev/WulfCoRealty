@@ -10,6 +10,7 @@ import Overview from "./components/FirstTimeBuyer/Overview";
 import FinancialPreparation from "./components/FirstTimeBuyer/FinancialPreparation";
 import FindRightHome from "./components/FirstTimeBuyer/FindRightHome";
 import UnderstandingTheMarket from "./components/FirstTimeBuyer/UnderstandingMarket";
+import InspectionAndAppraisal from "./components/FirstTimeBuyer/InspectionAndAppraisal";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
             <Route path="/searchresult" element={<SearchResultsPage />} />
             <Route path="/property/:zpid" element={<PropertyDetailsPage />} />
             <Route path="/overview" element={<Overview />} />
+            <Route
+              path="/home-inspections-and-appraisals"
+              element={<InspectionAndAppraisal />}
+            />
             <Route
               path="/understanding-the-market"
               element={<UnderstandingTheMarket />}
