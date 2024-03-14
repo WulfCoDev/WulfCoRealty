@@ -51,14 +51,14 @@ const FirstTimeBuyerSection = () => {
           </a>
         </div>
         <div className="bg-7 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <a href="">
+          <a href="/post-purchase-considerations">
             <p className="font-secondary text-white backdrop-blur-sm bg-black/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
-              Post Purchase Consideration
+              Post Purchase Considerations
             </p>
           </a>
         </div>
         <div className="bg-8 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
-          <a href="">
+          <a href="/additional-resources">
             <p className="font-secondary text-white backdrop-blur-sm bg-black/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
               Additional Resources
             </p>
