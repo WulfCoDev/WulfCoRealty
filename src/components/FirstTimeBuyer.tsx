@@ -4,7 +4,7 @@ const FirstTimeBuyerSection = () => {
       <h1 className="text-white font-secondary font-bold text-4xl bg-slate-400 p-2 w-full shadow-lg shadow-black">
         First Time Buyers
       </h1>
-      <div className="w-full flex sm:flex-col space-x-8 justify-evenly items-center p-8 *:rounded-md *:shadow-lg *:shadow-black">
+      <div className="w-full flex space-x-8 justify-evenly items-center p-8 *:rounded-md *:shadow-lg *:shadow-black">
         <div className="bg-1 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
           <a href="/overview">
             <p className="font-secondary text-white backdrop-blur-sm bg-black/10 font-semibold text-2xl text-center ml-4 mr-4 p-2">
@@ -34,7 +34,7 @@ const FirstTimeBuyerSection = () => {
           </a>
         </div>
       </div>
-      <div className="w-full flex sm:flex-col space-x-8 justify-evenly items-center p-8 *:rounded-md *:shadow-lg *:shadow-black">
+      <div className="w-full flex space-x-8 justify-evenly items-center p-8 *:rounded-md *:shadow-lg *:shadow-black">
         <div className="bg-5 bg-cover bg-no-repeat w-[250px] h-[250px] flex justify-center items-center flex-col">
           {" "}
           <a href="/home-inspections-and-appraisals">
