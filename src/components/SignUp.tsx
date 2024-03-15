@@ -8,7 +8,8 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    navigate("/home");
+    navigate("/");
+    alert("Account created successfully");
   };
 
   return (

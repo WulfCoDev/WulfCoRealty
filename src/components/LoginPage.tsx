@@ -11,7 +11,7 @@ const LoginPage = () => {
   const handleLogin = () => {
     // Logic for handling login goes here
     // For demo purposes, let's navigate to the home page after login
-    navigate("/home");
+    navigate("/");
   };
 
   return (
